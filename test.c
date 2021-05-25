@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){ 
 
-    printf("I am pushing a C file into git yaayyy"); 
+    printf("Hey I am Srini Mama and I am the gang(prank)ster of CEG"); 
 
     return 0 ; 
 }
