@@ -5,14 +5,19 @@
         <script src="dynamic.js"></script>
     <style>
         table,td,tr {
-                border: 2px solid black;
+                border: 1px solid black;
             }
         .center{
                 margin-left: auto;
                 margin-right: auto;
+                border-collapse: collapse;
+
             }
-        .header{
+        th{
                 text-align: center;
+        }
+        .align{
+            text-align: center;
         }
         
     </style>
@@ -21,7 +26,10 @@
         <form method="POST" action="getdoc_details.php">
             <h1 style="text-align:center">DOCTOR DETAILS</h1>
             <table class="center">
-                <th class="header">DOCTOR DETAILS</th>
+                <tr>
+                <th colspan="2">PLEASE FILL IN YOUR DETAILS</th>
+                </tr>
+
                 <tr>
 
                     <td><label for="dname">Name: </label></td>
@@ -65,11 +73,19 @@
                     <br>
                 </tr>
 
-                 <tr height="300">
+                 <tr>
                      <td><label for="dspec">Specialization </label></td>
                      <td><input id="dspec" type="text" name="dspec" placeholder="Enter your Specialization" size="40"></td>
                      <br>
                      <br>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" class="align">
+                        <input type="submit" name="submit" value="Submit">
+                        <input type="Reset">
+                    </td>
+                    
                 </tr>
 
             </table>
