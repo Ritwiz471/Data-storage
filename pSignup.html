@@ -4,9 +4,13 @@
         <title>Patient Form</title>
 
         <style>
-          
+
             table,tr,td{
                 border: 2px double black;
+                border-collapse: collapse;
+                margin-left: auto;
+                margin-right:auto; 
+                margin-top: 1%;
             }
           
             th{
@@ -14,21 +18,21 @@
                 color: blue;
             }
         </style>
+
     </head>
 
     <body>
-        <center>
+        
         <form method="POST" action="getdetails.php">
-
             <table>
-                <th>Please enter your details correctly</th>
+                <tr><th colspan="2">Please enter your details correctly</th></tr>
+                
                 <tr>
                     <td><label for="pname">Name:</label></td>
                     <td><input id="pname" type="text" name="pname" placeholder="enter your name" required></td>
                 </tr>
                 <br>
                 <br>
-                
                 
                 <tr>
                     <td><label for="page">Age:</label></td>
@@ -80,9 +84,14 @@
                         <input id="pblood" type="radio" name="pblood">O-<br>
                     </td>
                 </tr>
-            </table>
 
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="submit">
+                        <input type="reset"> 
+                    </td>
+                </tr>
+            </table>
         </form>
-    </center>
     </body>
 </html>
