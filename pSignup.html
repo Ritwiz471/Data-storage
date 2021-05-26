@@ -8,20 +8,23 @@
             table,tr,td{
                 border: 2px double black;
             }
-            table{
-                text-align: left;
+          
+            th{
+                text-align: center;
+                color: blue;
             }
         </style>
     </head>
 
     <body>
-        
+        <center>
         <form method="POST" action="getdetails.php">
 
             <table>
+                <th>Please enter your details correctly</th>
                 <tr>
                     <td><label for="pname">Name:</label></td>
-                    <td><input id="pname" type="text" name="pname" placeholder="enter your name"></td>
+                    <td><input id="pname" type="text" name="pname" placeholder="enter your name" required></td>
                 </tr>
                 <br>
                 <br>
@@ -29,35 +32,35 @@
                 
                 <tr>
                     <td><label for="page">Age:</label></td>
-                    <td><input id="page" type="date" name="page" placeholder="enter your age"></td>
+                    <td><input id="page" type="date" name="page" placeholder="enter your age" required></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
-                    <td><label for="pid">ID:</label> </td>
-                    <td><input id="pid" type="file" name="pid"></td>
+                    <td><label for="pid">ID Proof:</label> </td>
+                    <td><input id="pid" type="file" name="pid" required></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="pemail"> Email Address:</label></td>
-                    <td><input id="pemail" type="email" name="pemail" placeholder="enter your mail id"></td>
+                    <td><input id="pemail" type="email" name="pemail" placeholder="enter your mail id" required></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="pnum">Number:</label></td>
-                    <td><input id="pnum" type="text" name="pnum" placeholder="enter your phone number"></td>
+                    <td><input id="pnum" type="text" name="pnum" placeholder="enter your phone number" required></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="ppassword">Password:</label></td>
-                    <td><input id="ppassword" type="password" name="ppassword" placeholder="enter a password"></td>
+                    <td><input id="ppassword" type="password" name="ppassword" placeholder="enter a password" required></td>
                 </tr>
                 <br>
                 <br>
@@ -71,28 +74,15 @@
                         <input id="pblood" type="radio" name="pblood">B+<br>
                         <input id="pblood" type="radio" name="pblood">O+<br>
                         <input id="pblood" type="radio" name="pblood">AB+<br>
+                        <input id="pblood" type="radio" name="pblood">AB-<br>
                         <input id="pblood" type="radio" name="pblood">A-<br>
                         <input id="pblood" type="radio" name="pblood">B-<br>
+                        <input id="pblood" type="radio" name="pblood">O-<br>
                     </td>
                 </tr>
             </table>
 
-            
-            
-
-
-
-
-          
-
-
-
-
-
-
-
-
-
         </form>
+    </center>
     </body>
 </html>
