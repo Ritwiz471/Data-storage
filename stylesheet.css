@@ -20,6 +20,13 @@ button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
+.title{
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
+    
+    
+}
 
     
 
@@ -30,7 +37,7 @@ button{
 
 
     margin-right: 30%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     text-align : center;
     border-radius: 25px;
