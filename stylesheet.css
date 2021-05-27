@@ -5,18 +5,22 @@ body{
     -o-background-size: cover;
     background-size: cover;
     color: rgb(0, 0, 0); 
-}
 
-h1{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
    
     color: rgb(0, 0, 0);
 }
-.one{
+
+
+
+.homepage_div{
+
+    border: black solid 2px;
+    border-collapse: collapse;
+
+    margin-right: 40%;
+    margin-top: 20%;
+    float: left
     text-align: center;
-}
-.two{
-    text-align: center;
-    
 }
