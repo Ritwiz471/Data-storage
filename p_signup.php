@@ -47,6 +47,13 @@ if(isset($_POST['submit']))
     {
         echo "Worked for Mac ;)";
     }
-
+    $tablename = "P_".$pnum;
+    $sql = "CREATE TABLE $tablename ( date DATE, filename varchar(100), dname varchar(100), dnum varchar(20))";
+    $run1 = mysqli_query($conn,$sql);
+    if(!$run1)
+    {
+        echo mysqli_error($conn);
+    }
+    //date doctor filname,docphone
 }
 ?>
