@@ -13,5 +13,5 @@ if(isset($_POST['submit']))
     $query = "INSERT INTO Patient(name,phone) values('$name','$phone')";
     $run = mysqli_query($conn,$query);
 
-
+    //HEllo
 }
