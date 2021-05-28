@@ -1,6 +1,12 @@
 <?php
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
 
+if(!$conn)
+{
+    echo "failed";
+
+}
+
 //error reporting 
 ini_set ("display_errors", "1");
 error_reporting(E_ALL);
@@ -16,7 +22,7 @@ if(isset($_POST['submit']))
     $pblood = $_POST['pblood'];
     $filename = $_FILES['pid']['name'];
     $tempname = $_FILES['pid']['tmp_name'];
-    $folder = "uploads/".$filename;
+    $folder = "uploads/patient/".$filename;
 
     $query = "INSERT INTO patient(pname,page,pid,pemail,pnum,ppassword,pblood) values('$pname','$page','$filename','$pemail','$pnum','$ppassword','$pblood')";
     $run = mysqli_query($conn,$query);
