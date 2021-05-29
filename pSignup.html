@@ -6,7 +6,8 @@
         <style>
 
             body{
-                background-image: background-image: linear-gradient(to right,#3be2c9,rgba(17,213,85,100));; 
+                background-image: linear-gradient(to right,#3be2c9,rgba(17,213,85,100));
+            }
             table,tr,td{
                 border: 2px double black;
                 border-collapse: collapse;
@@ -23,7 +24,12 @@
             }
             table{
                 table-layout: fixed;
+                margin-top: -10%;
                 
+            }
+            h1{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;          
             }
         </style>
 
@@ -32,6 +38,7 @@
     <body>
         
         <form method="POST" action="p_signup.php" enctype="multipart/form-data">
+            <h1>Patient Signup</h1>
             <table>
                 <tr><th colspan="2">Please enter your details correctly</th></tr>
                 
