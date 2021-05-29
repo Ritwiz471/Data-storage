@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
     //check query
     if(!$run)
     {
-        echo "<script> alert('Failed')</script>";
+        echo "<script> alert('Query Failed')</script>";
 
     }
     else
