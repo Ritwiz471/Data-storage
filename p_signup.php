@@ -41,7 +41,7 @@ if(isset($_POST['submit']))
     //move files
     if(move_uploaded_file($tempname,$folder))
     {
-        echo "Worked for Windows";
+        echo "Worked for Windows ".$tempname;
     }
     else
     {
