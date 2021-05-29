@@ -22,6 +22,7 @@ if(!$run)
 }
 $row = mysqli_fetch_assoc($run);
 $password = $row['dpwd'];
+$dname = $row['dname'];
 
 if($dpwd!=$password)
 {
@@ -30,7 +31,6 @@ if($dpwd!=$password)
 else
 {
     $tablename = "P_".$pnum;
-    echo $tablename;
     $query1 = "SELECT * FROM $tablename";
     $run1 = mysqli_query($conn, $query1);
     if(!$run1)
@@ -50,6 +50,8 @@ else
     } 
     session_start();
     $_SESSION['tablenameup']=$tablename;
+    $_SESSION['docname']= $dname;
+    $_SESSION['docnum']= $dnumber;
     echo "<a href= 'dupload.html' target='_blank'><button>Upload</button></a>";
 
 }

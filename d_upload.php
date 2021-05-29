@@ -11,14 +11,14 @@ if(!$conn)
 //error reporting 
 ini_set ("display_errors", "1");
 error_reporting(E_ALL);
-echo "hello";
+
 if(isset($_POST['submit']))
 {
     
     session_start();
     $tablename = $_SESSION['tablenameup'];
-    $dname = $_POST['dname'];
-    $dnum = $_POST['dnum'];
+    $dname = $_SESSION['docname'];
+    $dnum = $_SESSION['docnum'];
     $sno = $_POST['sno'];
     $date = $_POST['date'];
     $filename = $_FILES['file']['name'];
