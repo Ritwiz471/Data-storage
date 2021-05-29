@@ -23,10 +23,13 @@ if(!$run)
     while($row = mysqli_fetch_assoc($run)) 
     {
         echo "sno : {$row['sno']}<br>".
-            " DATE :{$row['date']}  <br> ".
+            " DATE :{$row['date']}<br> ".
             "filename : {$row['filename']} <br> ".
            "dname :{$row['dname']}<br>". 
            "dnum : {$row['dnum']}<br>";
+        $filename = "uploads/doctor/".$row['filename'];
+        echo $filename;   
+        echo '<button onclick="document.location= $filename">Download</button>';
      
     } 
 
