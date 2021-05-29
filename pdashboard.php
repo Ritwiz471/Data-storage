@@ -22,9 +22,13 @@ if(!$run)
 }
     while($row = mysqli_fetch_assoc($run)) 
     {
-        echo " DATE :{$row['date']}  <br> ".
-           "filename : {$row['filename']} <br> ".
+        echo "sno : {$row['sno']}<br>".
+            " DATE :{$row['date']}  <br> ".
+            "filename : {$row['filename']} <br> ".
            "dname :{$row['dname']}<br>". 
            "dnum : {$row['dnum']}<br>";
-     } 
+     
+    } 
+
+
 ?>
