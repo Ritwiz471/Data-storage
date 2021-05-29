@@ -48,7 +48,8 @@ else
         echo '<a href= "'.$filename.'" target="_blank"><button>Download</button></a>';
      
     } 
-    
+    session_start();
+    $_SESSION['tablenameup']=$tablename;
     echo "<a href= 'dupload.html' target='_blank'><button>Upload</button></a>";
 
 }
