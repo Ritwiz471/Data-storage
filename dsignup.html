@@ -5,13 +5,28 @@
         <script src="dynamic.js"></script>
     <style>
        table,tr,td{
-                border: 2px double black;
+                border: 2px  rgb(90, 85, 163);
                 border-collapse: collapse;
                 margin-left: auto;
                 margin-right:auto; 
                 margin-top: 1%;
                 
             }
+        table{
+            margin-top: -10%;
+            margin-left: 20%;
+            margin-right: 37%;
+            
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 30px 0 rgba(116,145,93);
+            width: 60%;
+            align-items: centre;
+            text-align: center;
+            background-image:linear-gradient(to right,#6bb2c4,rgb(132, 214, 183));
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            color: black;
+        }
+       
     
             
         th{
@@ -22,8 +37,12 @@
                 text-align: center;
         }
         body{
-                background-image: linear-gradient(to right,#3be2c9,rgba(17,213,85,100));
-            }
+                background-image: linear-gradient(to right,#769fc2,rgb(139, 158, 197));
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
         
     </style>
     </head>
@@ -38,49 +57,49 @@
                 <tr>
 
                     <td><label for="dname">Name: </label></td>
-                    <td><input id="dname" type="text" name="dname" placeholder="Enter your name" size="40" required></td>
+                    <td><input id="dname" type="text" name="dname" placeholder="Enter your name" size="60%" required style="line-height: 20px;"></td>
                     <br>
                     <br>
                 </tr>
 
                 <tr>
                     <td><label for="dage">Age: </label></td>
-                    <td><input id="dage" type="date" name="dage" placeholder="Enter your age" required></td>
+                    <td><input id="dage" type="date" name="dage" placeholder="Enter your age" required style="align-items: left";></td>
                     <br>
                     <br>
                 </tr>
 
                  <tr>
                     <td><label for="dID">Upload ID: </label></td>
-                    <td><input id="dID" type="file" name="dID" required></td>
+                    <td><input id="dID" type="file" name="dID" required style="text-align: left;"></td>
                     <br>
                     <br>
                 </tr>
             
                  <tr>
                     <td><label for="demail">Email ID: </label></td>
-                    <td><input id="demail" type="email" name="demail" placeholder="Enter email" size="40" required></td>
+                    <td><input id="demail" type="email" name="demail" placeholder="Enter email" size="60%" required style="line-height: 20px;" ></td>
                     <br>
                     <br>    
                 </tr>
 
                  <tr>
                     <td><label for="dnumber">Phone Number: </label></td>
-                    <td><input id="dnumber" type="number" name="dnumber" placeholder="Enter phone number" required min="1000000000" max="99999999999"></td>
+                    <td><input id="dnumber" type="text" name="dnumber" placeholder="Enter phone number" required min="1000000000" max="99999999999" size="60%" style="line-height: 20px;"></td>
                     <br>
                     <br>
                 </tr>
             
                 <tr>
                     <td><label for="dpwd">Password: </label></td>
-                    <td><input id="dpwd" type="password" name="dpwd" placeholder="Enter your password" size="40" required></td>
+                    <td><input id="dpwd" type="password" name="dpwd" placeholder="Enter your password" size="60%" required style="line-height: 20px;"></td>
                     <br>
                     <br>
                 </tr>
 
                  <tr>
                      <td><label for="dspec">Specialization </label></td>
-                     <td><input id="dspec" type="text" name="dspec" placeholder="Enter your Specialization" size="40" required></td>
+                     <td><input id="dspec" type="text" name="dspec" placeholder="Enter your Specialization" size="60%" required style="line-height: 20px;"></td>
                      <br>
                      <br>
                 </tr>
