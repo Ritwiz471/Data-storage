@@ -28,9 +28,9 @@ if(isset($_POST['submit']))
     $run = mysqli_query($conn,$query);
     
     //check query
-    if($run)
+    if(!$run)
     {
-        echo "<h1>success</h1>";
+        echo "<script> alert('Query Failed')</script>";
 
     }
     else
@@ -41,11 +41,11 @@ if(isset($_POST['submit']))
     //move files
     if(move_uploaded_file($tempname,$folder))
     {
-        echo "<h1 class='one'>File Uploaded!!</h1>".$tempname;
+        echo "<script> alert('Success')</script>";
     }
     else
     {
-        echo "<h1>Failed</h1>";
+        echo "<script> alert('Failed')</script>";
     }
     $tablename = "P_".$pnum;
     $sql = "CREATE TABLE $tablename ( sno int(4) NOT NULL,date DATE, filename varchar(100), dname varchar(100), dnum varchar(20), PRIMARY KEY (sno))";

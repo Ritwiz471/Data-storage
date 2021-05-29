@@ -26,9 +26,9 @@ if(isset($_POST['submit']))
     $query = "INSERT INTO doctor(dname,dage,did,demail,dnumber,dpwd,dspec) values('$dname','$dage','$filename','$demail','$dnumber','$dpwd','$dspec')";
     $run = mysqli_query($conn,$query);
     //check query
-    if($run)
+    if(!$run)
     {
-        echo "<h2>success</h2>";
+        echo "<script> alert('Query Failed')</script>";
 
     }
     else
@@ -38,12 +38,12 @@ if(isset($_POST['submit']))
     //move files to disk
     if(move_uploaded_file($tempname,$filename))
     {
-        echo "<h1 class='one'>File Uploaded!!</h1>";
+        echo "<script> alert('Success')</script>";
 
     }
     else
     {
-        echo "<h1>Failed</h1>";
+        echo "<script> alert('Failed')</script>";
     }
 
 }
