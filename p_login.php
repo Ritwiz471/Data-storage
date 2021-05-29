@@ -29,7 +29,7 @@ else
 {
     session_start();
     $_SESSION['tablename']=$tablename;
-    echo '<meta http-equiv= "refresh" content="2; url=/Data-storage/pdashboard.php"/>';//URL TO BE CHANGED 
+    echo '<meta http-equiv= "refresh" content="1; url=/Data-storage/pdashboard.php"/>';//URL TO BE CHANGED 
     
 }
 
