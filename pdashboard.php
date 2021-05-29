@@ -27,9 +27,8 @@ if(!$run)
             "filename : {$row['filename']} <br> ".
            "dname :{$row['dname']}<br>". 
            "dnum : {$row['dnum']}<br>";
-        $filename = "uploads/doctor/".$row['filename'];
-        echo $filename;   
-        echo '<button onclick="document.location= $filename">Download</button>';
+        $filename = "/Data-storage/uploads/patient/".$row['filename'];  
+        echo '<a href= "'.$filename.'" target="_blank"><button>Download</button></a>';
      
     } 
 
