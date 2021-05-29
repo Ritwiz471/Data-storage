@@ -1,5 +1,5 @@
 <?php
-echo "<style>url(Minimalistic_cheddi.jpg) no-repeat center center fixed</style>";
+echo "<html><head><style>background-image: url('Minimalistic_cheddi.jpg')</style></head><body></body></html>";
 
 
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
     //check query
     if($run)
     {
-        echo "<h1>success</h1>";
+        echo "<h1>Success!!</h1>";
 
     }
     else
@@ -45,7 +45,7 @@ if(isset($_POST['submit']))
     //move files
     if(move_uploaded_file($tempname,$folder))
     {
-        echo "<h1 class="one">File Uploaded!!</h1>";
+        echo "<h1 class='one'>File Uploaded!!</h1>";
     }
     else
     {
