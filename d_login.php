@@ -1,6 +1,8 @@
 <?php
+echo "<html>";
+echo "<body>";
+echo "<link rel='stylesheet' type='text/css' href='table.css' />";
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
-
 if(!$conn)
 {
     echo "<h1>failed</h1>";
@@ -37,22 +39,27 @@ else
     {
     echo mysqli_error($conn);
     }
-    while($row = mysqli_fetch_assoc($run1)) 
+    echo "<table class = 'dash' border='2px'>";
+    while($row1 = mysqli_fetch_assoc($run1)) 
     {
-        echo "sno : {$row['sno']}<br>".
-            " DATE :{$row['date']}<br> ".
-            "filename : {$row['filename']} <br> ".
-           "dname :{$row['dname']}<br>". 
-           "dnum : {$row['dnum']}<br>";
-        $filename = "/Data-storage/uploads/patient/".$row['filename'];  
-        echo '<a href= "'.$filename.'" target="_blank"><button>Download</button></a>';
-     
+        echo "<tr>";
+            echo "<td> {$row1['sno']} </td>";
+            echo "<td>{$row1['filename']}</td>";
+            echo "<td>{$row1['date']}</td>";
+            echo "<td>{$row1['dname']}</td>";
+            echo "<td>{$row1['dnum']}</td>";
+            $filename = "/Data-storage/uploads/patient/".$row1['filename'];  
+            echo '<td><a href= "'.$filename.'" target="_blank"><button>Download</button></a></td>';
+        echo "</tr>";
     } 
+    echo "</table>";
+    echo "</body>";
+    echo "</html>";
     session_start();
     $_SESSION['tablenameup']=$tablename;
     $_SESSION['docname']= $dname;
     $_SESSION['docnum']= $dnumber;
-    echo "<a href= 'dupload.html' target='_blank'><button>Upload</button></a>";
+    echo "<a href= 'dupload.html' target='_blank'><button class='button'>Upload</button></a>";
 
 }
 
