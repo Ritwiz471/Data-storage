@@ -45,6 +45,7 @@ if(isset($_POST['submit']))
     {
         echo "<script> alert('Failed')</script>";
     }
+    echo '<meta http-equiv= "refresh" content="1; url=/Data-storage/dLogin.html"/>';
 
 }
 ?>
