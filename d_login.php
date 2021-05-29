@@ -7,20 +7,26 @@ if(!$conn)
 
 }
 
-$dnumber = $_POST['phno'];
+$dnumber = $_POST['dnum'];
 $dpwd = $_POST['dpwd'];
-$query = "SELECT * FROM doctor WHERE dnumber = $dnumber ";
+$pnum =$_POST['pnum'];
+
+$query = "SELECT * FROM doctor WHERE dnumber = $dnumber";
 $run = mysqli_query($conn,$query);
 if(!$run)
 {
     echo mysqli_error($conn);
 }
 $row = mysqli_fetch_assoc($run);
-$password = $row['dnumber'];
+$password = $row['dpwd'];
 
-if($dnum!=$password)
+if($dpwd!=$password)
 {
     echo "incorrect password";
+}
+else
+{
+    echo "hello";
 }
 
 
