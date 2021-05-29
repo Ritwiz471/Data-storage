@@ -3,7 +3,7 @@ $conn = mysqli_connect("localhost","root","","data_stethoscope");
 
 if(!$conn)
 {
-    echo "failed";
+    echo "<h1>failed</h1>";
 
 }
 
@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
     //check query
     if($run)
     {
-        echo "sucess";
+        echo "<h1>success</h1>";
 
     }
     else
@@ -41,11 +41,11 @@ if(isset($_POST['submit']))
     //move files
     if(move_uploaded_file($tempname,$folder))
     {
-        echo "Worked for Windows ".$tempname;
+        echo "<h1 class='one'>File Uploaded!!</h1>".$tempname;
     }
     else
     {
-        echo "Worked for Mac ;)";
+        echo "<h1>Failed</h1>";
     }
     $tablename = "P_".$pnum;
     $sql = "CREATE TABLE $tablename ( sno int(4) NOT NULL,date DATE, filename varchar(100), dname varchar(100), dnum varchar(20), PRIMARY KEY (sno))";

@@ -4,7 +4,7 @@ $conn = mysqli_connect("localhost","root","","data_stethoscope");
 
 if(!$conn)
 {
-    echo "failed";
+    echo "<h1>failed</h1>";
 
 }
 
@@ -23,7 +23,7 @@ $password = $row['ppassword'];
 
 if($ppassword!=$password)
 {
-    echo "incorrect password";
+    echo "<h3>incorrect password</h3>";
 }
 else
 {

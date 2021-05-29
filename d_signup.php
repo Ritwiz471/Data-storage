@@ -2,7 +2,7 @@
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
 if(!$conn)
 {
-    echo "failed";
+    echo "<h1>failed</h1>";
 
 }
 //Error Reporting 
@@ -28,7 +28,7 @@ if(isset($_POST['submit']))
     //check query
     if($run)
     {
-        echo "success";
+        echo "<h2>success</h2>";
 
     }
     else
@@ -38,12 +38,12 @@ if(isset($_POST['submit']))
     //move files to disk
     if(move_uploaded_file($tempname,$filename))
     {
-        echo "Works in windows";
+        echo "<h1 class='one'>File Uploaded!!</h1>";
 
     }
     else
     {
-        echo "Works in Mac ;)";
+        echo "<h1>Failed</h1>";
     }
 
 }
