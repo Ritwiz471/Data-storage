@@ -1,5 +1,5 @@
 <?php
-echo "<style> background-url('Minimalistic_cheddi.jpg')</style>"
+echo "<style> background-url('Minimalistic_cheddi.jpg')</style>";
 
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
 
