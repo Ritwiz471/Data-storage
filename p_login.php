@@ -25,5 +25,10 @@ if($ppassword!=$password)
 {
     echo "incorrect password";
 }
+else
+{
+    echo '<meta http-equiv= "refresh" content="2; url=/Data-storage/dlogin.html"/>';//URL TO BE CHANGED 
+    
+}
 
 ?>
