@@ -1,5 +1,5 @@
 <?php
-echo "<html><head><style>*{background-image: url('Minimalistic_cheddi.jpg')}</style></head></html>";
+
 
 
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
@@ -32,9 +32,9 @@ if(isset($_POST['submit']))
     $run = mysqli_query($conn,$query);
     
     //check query
-    if($run)
+    if(! $run)
     {
-        echo "<h1>Success!!</h1>";
+        echo "<script>alert('Query failed!')<script>";
 
     }
     else
@@ -45,11 +45,11 @@ if(isset($_POST['submit']))
     //move files
     if(move_uploaded_file($tempname,$folder))
     {
-        echo "<h1 class='one'>File Uploaded!!</h1>";
+        echo "<script>alert('File Uploaded!!')</script>";
     }
     else
     {
-        echo "<h1>Failed</h1>";
+        echo "<script>alert('Failed')</script>";
     }
 
 }
