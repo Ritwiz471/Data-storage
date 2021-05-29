@@ -1,11 +1,12 @@
 <?php
-echo "<style> background-url('Minimalistic_cheddi.jpg')</style>";
+echo "<style>url(Minimalistic_cheddi.jpg) no-repeat center center fixed</style>";
+
 
 $conn = mysqli_connect("localhost","root","","data_stethoscope");
 
 if(!$conn)
 {
-    echo "failed";
+    echo "<h1>failed<h1>";
 
 }
 
@@ -33,7 +34,7 @@ if(isset($_POST['submit']))
     //check query
     if($run)
     {
-        echo "success";
+        echo "<h1>success</h1>";
 
     }
     else
@@ -44,11 +45,11 @@ if(isset($_POST['submit']))
     //move files
     if(move_uploaded_file($tempname,$folder))
     {
-        echo "Worked for Windows ";
+        echo "<h1 class="one">File Uploaded!!</h1>";
     }
     else
     {
-        echo "Worked for Mac ;)";
+        echo "<h1>Failed</h1>";
     }
 
 }
