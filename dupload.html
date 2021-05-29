@@ -5,23 +5,6 @@
         </title>
 
         <style>
-            table,tr,td{
-                border: 2px double black;
-                border-collapse: collapse;
-                margin-left: 10%;
-                margin-right:10%; 
-                margin-top: 1%;
-                
-            }
-
-       
-        body{ 
-            background: url(Minimalistic_cheddi.jpg) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
 
         .align{
                 text-align: center;
@@ -30,28 +13,25 @@
         h1{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             
-           
-            
         }
-
         </style>
     </head>
-
+    <link rel='stylesheet' type='text/css' href='table.css' />
     <form method="POST" action="d_upload.php" enctype="multipart/form-data">
-        <div>
-            <h1 style="text-align: center;">Records</h1>
-            <table>
+        <div >
+            <h1 id="rec">Records</h1>
+            <table id="upload">
                 
                 <tr>
-                 <td><label for="sno">S.no.:</label></td>
-                 <td><input type="text" name="sno" id="sno"></td>   
+                 <td><label for="sno">S.no:</label></td>
+                 <td><input type="text" name="sno" id="sno" size="40%" style="line-height: 20px; border-radius: 5px;"></td>   
                 </tr>
                 <br>
                 <br>
     
                 <tr>
                     <td><label for="date">Date:</label></td>
-                    <td><input type="date" name="date" id="date">  </td> 
+                    <td><input type="date" name="date" id="date" style="border-radius: 5px;">  </td> 
                 </tr>
                 <br>
                 <br>
@@ -62,8 +42,8 @@
                 </tr>
                 <br>
                 <br>
-                <tr colspan="2" class="allign">
-                    <td><input type="submit" name="submit" value="Submit" required></td>
+                <tr colspan="2" class="align">
+                    <td><input type="submit" name="submit" value="Submit" class="button" style="margin-left: 125%"></td>
                 </tr>
                
                 
