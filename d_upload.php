@@ -24,7 +24,7 @@ if(isset($_POST['submit']))
     $date = $_POST['date'];
     $filename = $_FILES['file']['name'];
     $tempname = $_FILES['file']['tmp_name'];
-    echo $filename;
+   
     $folder = "uploads/patient/".$filename;
 
     $query = "INSERT INTO $tablename values('$sno','$date','$filename','$dname','$dnum')";
