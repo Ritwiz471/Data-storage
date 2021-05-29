@@ -54,6 +54,7 @@ if(isset($_POST['submit']))
     {
         echo mysqli_error($conn);
     }
+    echo '<meta http-equiv= "refresh" content="1; url=/Data-storage/plogin.php"/>';
     //date doctor filname,docphone
 }
 ?>
