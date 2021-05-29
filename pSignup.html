@@ -5,12 +5,16 @@
 
         <style>
 
-            table,tr,td{
-                border: 2px double black;
+            table,tr,td,th{
+               
                 border-collapse: collapse;
                 margin-left: auto;
                 margin-right:auto; 
                 height: 100%;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-bottom: 15px;
+                
                
 
             }
@@ -19,15 +23,32 @@
                 text-align: center;
                 color: blue;
             }
+           
             table{
-                table-layout: fixed;
-                margin-top: -10%;
-                
+            margin-top: -10%;
+            margin-left: 20%;
+            margin-right: 37%;
+            
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 30px 0 rgba(116,145,93);
+            width: 60%;
+            align-items: centre;
+            text-align: center;
+            background-image:linear-gradient(to right,#6bb2c4,rgb(132, 214, 183));
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            color: black;
             }
+           
             h1{
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 text-align: center;          
             }
+            body{
+                background-image: linear-gradient(to right,#769fc2,rgb(139, 158, 197));
+        
+            }
+
+            
         </style>
 
     </head>
@@ -41,35 +62,35 @@
                 
                 <tr>
                     <td><label for="pname">Name:</label></td>
-                    <td><input id="pname" type="text" name="pname" placeholder="enter your name" required></td>
+                    <td><input id="pname" type="text" name="pname" placeholder="enter your name" required size="60%" style="line-height: 20px;"></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="page">Age:</label></td>
-                    <td><input id="page" type="date" name="page" placeholder="enter your age" required></td>
+                    <td><input id="page" type="date" name="page" placeholder="enter your age" required style="margin-right: 50%;"></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="pid">ID Proof:</label> </td>
-                    <td><input id="pid" type="file" name="pid" required></td>
+                    <td><input id="pid" type="file" name="pid" required style="margin-right: 31%;"></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="pemail"> Email Address:</label></td>
-                    <td><input id="pemail" type="email" name="pemail" placeholder="enter your mail id" required></td>
+                    <td><input id="pemail" type="email" name="pemail" placeholder="enter your mail id" required size="60%" style="line-height: 20px;"></td>
                 </tr>
                 <br>
                 <br>
                 
                 <tr>
                     <td><label for="pnum">Number:</label></td>
-                    <td><input id="pnum" type="text" name="pnum" placeholder="enter your phone number" required></td>
+                    <td><input id="pnum" type="text" name="pnum" placeholder="enter your phone number" required size="60%" style="line-height: 20px;"></td>
                 </tr>
                 <br>
                 <br>
@@ -77,7 +98,7 @@
                 
                 <tr>
                     <td><label for="ppassword">Password:</label></td>
-                    <td><input id="ppassword" type="password" name="ppassword" placeholder="enter a password" required></td>
+                    <td><input id="ppassword" type="password" name="ppassword" placeholder="enter a password" required size="60%" style="line-height: 20px;"></td>
                 </tr>
                 <br>
                 <br>
@@ -87,14 +108,14 @@
                         <label for="pblood">Blood Group: </label>
                     </td>
                     <td>
-                        <input id="pblood" type="radio" name="pblood" value="A+">A+<br>
-                        <input id="pblood" type="radio" name="pblood" value="B+">B+<br>
-                        <input id="pblood" type="radio" name="pblood" value ="O+">O+<br>
-                        <input id="pblood" type="radio" name="pblood" value="AB+">AB+<br>
-                        <input id="pblood" type="radio" name="pblood" value ="AB-">AB-<br>
-                        <input id="pblood" type="radio" name="pblood" value ="A-">A-<br>
-                        <input id="pblood" type="radio" name="pblood" value ="B-">B-<br>
-                        <input id="pblood" type="radio" name="pblood" value ="O-">O-<br>
+                        <input id="pblood" type="radio" name="pblood" value="A+">A+
+                        <input id="pblood" type="radio" name="pblood" value="B+">B+
+                        <input id="pblood" type="radio" name="pblood" value ="O+">O+
+                        <input id="pblood" type="radio" name="pblood" value="AB+">AB+
+                        <input id="pblood" type="radio" name="pblood" value ="AB-">AB-
+                        <input id="pblood" type="radio" name="pblood" value ="A-">A-
+                        <input id="pblood" type="radio" name="pblood" value ="B-">B-
+                        <input id="pblood" type="radio" name="pblood" value ="O-">O-
                     </td>
                 </tr>
 
